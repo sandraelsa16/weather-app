@@ -186,7 +186,7 @@ useEffect(()=>{
 
   // console.log(data);
   return (
-  <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0 ">
+  <div style={{ backgroundImage: `url(${background})`,backgroundRepeat: "no-repeat",backgroundSize:"cover" }} className="w-full h-screen flex flex-col items-center justify-center px-4 lg:px-0 ">
     {errMsg && <div className="w-full max-w-[90vw] lg:max-w-[450px] bg-red-600 text-white absolute top-2 lg:top-10 p-4 capitalize rounded-md z-10 mt-20">{`${errMsg.response.data.message}`}</div> }
     {/* form */}
     <form className={` ${animate? 'animate-shake':'animate-none'}  h-14 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mt-4 mb-3`}>
@@ -199,7 +199,7 @@ useEffect(()=>{
     </form>
 
     
-    <div  style={{ backgroundImage: `url(${background})`,backgroundRepeat: "no-repeat",backgroundSize:"cover" }} className="w-full max-w-[450px] min-h-[500px] text-white backdrop-blur-[32px] rounded-[32px] py-12 px-6 mb-4">
+    <div   className="w-full bg-black/15 max-w-[450px] min-h-[500px] text-white backdrop-blur-[32px] rounded-[32px] py-12 px-6 mb-4">
     
     {loading?( 
       <div className="w-full h-full flex justify-center items-center">

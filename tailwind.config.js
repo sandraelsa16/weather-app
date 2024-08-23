@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         gradientBg:
-          "url('https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-jplenio-1118873.jpg&fm=jpg')",
+          "url('https://m-cdn.phonearena.com/images/article/143515-wide-two_1200/Apple-tests-adding-news-to-the-native-Weather-app-in-iOS-16.2-Beta.jpg')",
       },
       keyframes: {
         shake: {
